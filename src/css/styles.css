@@ -64,6 +64,7 @@ input,button {
 }
 .icon-search:hover,.icon-search:focus{
     fill:rgba(19, 107, 46, 0.493);
+    outline:none;
 }
 .btn-search:hover{
     transform: scale(1.05);
@@ -83,7 +84,9 @@ input,button {
     margin-bottom: 20px;
 }
 .info{
-    font-size: 14px;
+    font-size: 12px;
+    justify-content: space-between;
+
 }
 .input-search{
     width: 150px;
