@@ -5,6 +5,7 @@
 body {
     font-family: 'Akshar', sans-serif;
     margin: 0;
+    outline:none;
 }
 input,button {
     outline:none;
@@ -84,6 +85,7 @@ input,button {
     margin-bottom: 20px;
 }
 .info{
+    display: flex;
     font-size: 12px;
     justify-content: space-between;
 
@@ -109,6 +111,7 @@ input,button {
     }
     .info{
         font-size: auto;
+        justify-content: space-between;
         padding-bottom: 40px;
     }
 }
@@ -126,6 +129,7 @@ input,button {
     }
     .info{
         font-size: auto;
+        justify-content: space-between;
     }
 }
 @media screen and (min-width: 1200px) {
@@ -155,10 +159,6 @@ input,button {
 }
 .gallery__item{
     box-sizing: border-box;
-}
-.info{
-    display: flex;
-    justify-content: space-around;
 }
 .info-item {
 display: flex;
