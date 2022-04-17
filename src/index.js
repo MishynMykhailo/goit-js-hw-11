@@ -73,7 +73,7 @@ refs.galleryMarkup.innerHTML="";
 
 function renderImg({data}){
     const markup = data.hits.map(mark=>{return `<div class="photo-card"><a class="gallery__item" href='${mark.largeImageURL}'>
-    <img class="gallery__image" src="${mark.webformatURL}" alt="${mark.tags}" loading="lazy" /></a>
+    <img class="gallery__image" src="${mark.webformatURL}" alt="${mark.tags}" loading="lazy"/></a>
     <div class="info">
       <p class="info-item">
         <b>Likes:</b>${mark.likes}
