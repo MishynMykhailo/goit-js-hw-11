@@ -91,7 +91,6 @@ function renderImg({data}){
     
   </div>
   `}).join('')
-  console.log(data)
   // refs.btnLoadMore.classList.remove('is-hidden')
   refs.galleryMarkup.insertAdjacentHTML('beforeend',markup);
   lightbox.refresh();
@@ -109,7 +108,6 @@ eteries.forEach(eter=>{
     }
     try{
   photoClass.fetchFindImage().then(renderImg);
-  console.log(eter.target)
   observer.unobserve(eter.target);
 }catch(error){
   Notify.failure(error);
