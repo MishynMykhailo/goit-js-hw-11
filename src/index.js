@@ -4,6 +4,10 @@ import 'simplelightbox/dist/simple-lightbox.css';
 import SimpleLightbox from 'simplelightbox';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
+Notify.init({ 
+  clickToClose:true,
+  });
+
 const photoClass = new PhotoClass();
 const axios = require('axios').default;
 
@@ -46,7 +50,6 @@ refs.btnSumbit.addEventListener('input',(e)=>{
 //     console.log(error)
 //   }
 // }
-
 async function searchImg (e){
   e.preventDefault();
   clearMarkup();
